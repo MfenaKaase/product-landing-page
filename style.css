@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+header{
+    height: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./bg-img.jpg) no-repeat;
+    background-size: cover;
+    padding: .5em 4em;
+    justify-content: space-between;
+    background-position: fixed;
+}
+
+#banner{
+    display: flex;  
+}
+
+#video-cont{
+    width: 100%;
+}
+
+#logo{
+    width: 30px;
+}
+
+#nav-bar{
+    background-color: ghostwhite;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+}
+
+.nav-link{
+    list-style: none;
+    margin-left: 1em;   
+}
+
+.nav-link a{
+    color: teal;
+    text-decoration: none;
+}
+
+.nav-link a:hover{
+    border-bottom: teal 2px solid;
+}
+
+#video-cont{
+    margin: 1em auto;
+}
+
+video{
+    display: block;
+    width: 100%;
+}
+
+#main-cont{    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#products{
+    padding: 2em 4em;
+    color: whitesmoke;
+    background-color: rgb(221, 151, 151);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products{
+    flex-basis: 33.333%;
+}
+
+.products:hover{
+    transform: scale(90%);
+    transition: all .5s;
+    filter: grayscale(100%);
+}
+
+.products img{
+    width: 100%;
+}
+
+#abt-sect{
+    padding: 2em 4em;
+}
+
+#form-sect{
+    margin: 1em auto;
+    padding: 2em 4em;
+    color: whitesmoke;
+    background-color: rgb(221, 151, 151);
+}
+
+#form-sect h2{
+    text-align: center;
+}
+
+#email{
+    display: block;
+    margin: 1em auto;
+    padding: 1em 1em;
+}
+
+#submit{
+    display: block;
+    margin: 1em auto;
+    padding: 1em 1em;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    #nav-bar{
+        display: block;
+    }
+
+    .nav-link{
+        padding: .5em 1em;
+    }
+
+    #header{
+        display: block;
+    }
+
+    #products{
+        
+    }
+    
+    .products{
+        flex-basis: 100%;
+        margin: 1em 0;
+    }
+    
+}
